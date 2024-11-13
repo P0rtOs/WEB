@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev": "parcel src/pages/MainPage.html",
+    "build": "parcel build src/pages/MainPage.html"
+  },
+  "dependencies": {
+    "parcel": "^2.12.0"
+  }
+}

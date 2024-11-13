@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Генерація резюме</title>
+</head>
+<body>
+  <header>
+        
+    <div class="logo">
+        <img src="../images/Logo.png" alt="Логотип сайту">
+    </div>
+
+    
+    <nav>
+        <a href="#services">Послуги</a>
+        <a href="#blog">Блог</a>
+        <a href="#contacts">Контакти</a>
+    </nav>
+
+    
+    <div class="cta-button">
+        <button>Створити резюме</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="resume-form-section">
+      <div class="resume-form-container">
+        <h2>Генерація резюме</h2>
+        <form action="#" method="POST">
+          <div class="form-group photo-upload">
+            <label for="photo">Виберіть фото</label>
+            <input type="file" id="photo" name="photo">
+          </div>
+
+          <div class="form-group personal-details">
+            <label for="first-name">Ім'я</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Прізвище</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="address">Побітовий</label>
+            <input type="text" id="address" name="address">
+
+            <label for="phone">Номер телефону</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="email">Електронна пошта</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="birthdate">Дата народження</label>
+            <input type="date" id="birthdate" name="birthdate">
+          </div>
+
+          <div class="form-group">
+            <label for="education">Освіта</label>
+            <textarea id="education" name="education" placeholder="Перерахуйте заклади, в яких ви навчались" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="courses">Курси</label>
+            <textarea id="courses" name="courses" placeholder="Перерахуйте пройдені вами курси" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="languages">Знання мов</label>
+            <textarea id="languages" name="languages" placeholder="Перерахуйте якими мовами ви володієте та на якому рівні" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="skills">Навички</label>
+            <textarea id="skills" name="skills" placeholder="Перерахуйте ваші професійні навички" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="qualities">Особисті якості</label>
+            <textarea id="qualities" name="qualities" placeholder="Перерахуйте ваші софт скіли" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-button">Підтвердити</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact-info">
+        <h3>Контактна інформація</h3>
+        <div class="contact-info-list"></div>
+            <p>Номер телефону: +38 012 345 6789</p>
+            <p>Email: info@company.com</p>
+            <div class="social-icons">  
+                <a href="#"><img src="../images/twitter.png" alt="Facebook"></a>
+                <a href="#"><img src="../images/facebook.png" alt="Instagram"></a>
+                <a href="#"><img src="../images/telegram.png" alt="Twitter"></a>
+                <a href="#"><img src="../images/instagram.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="services">
+        <h3>Послуги</h3>
+        <ul>
+            <li><a href="#service1">Послуга 1</a></li>
+            <li><a href="#service2">Послуга 2</a></li>
+            <li><a href="#service3">Послуга 3</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-logo">
+        <img src="../images/Logo.png" alt="Логотип компанії">
+    </div>
+  </footer> 
+
+</body>
+</html>
