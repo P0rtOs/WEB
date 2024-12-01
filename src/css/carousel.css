@@ -1,0 +1,75 @@
+.carousel {
+    position: relative;
+   
+    width: 100%;
+    
+    margin: auto;
+}
+
+.carousel-content {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+/* Анімація для плавної появи */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Анімація для плавного зникнення */
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+.slide {
+    min-width: 100%; /* Each slide takes up full width */
+    animation: fade-in 1.5s ease forwards; /* Додається анімація при появі */
+    display: none;
+}
+
+.slide.active {
+    display: block;
+    animation: fade-in 1.5s ease forwards; /* Анімація при показі */
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.indicator {
+    width: 25px;
+    height: 25px;
+    background-color: #fcfcfc;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+    justify-content: center; 
+    transition: background-color 0.3s;
+}
+
+.indicator:hover, .indicator.active {
+    width: 25px;
+    height: 25px;
+    background: radial-gradient(circle, white 60%, blue 80%);
+    border-radius: 50%; /* Робить круглу форму */
+    box-shadow: 0 0 5px blue; /* Додає "світіння" */
+}
+
+
+
+@media (max-width: 900px) {
+    .indicator, .indicator.active{
+        height: 18px;
+        width: 18px;
+    }
+}

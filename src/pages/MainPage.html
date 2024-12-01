@@ -2,26 +2,39 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/carousel.css">
+    <link rel="stylesheet" href="../css/service-card.css">
+    <link rel="stylesheet" href="../css/starter-page.css">
+    <link rel="stylesheet" href="../css/vacantions.css">
+    <link rel="stylesheet" href="../css/blogs.css">
     <title>Мій сайт</title>
 </head>
-<body>
+<body id="body">
     <header>
         
         <div class="logo">
-            <img src="../images/Logo.png" alt="Логотип сайту">
+            <a href="./MainPage.html#body"><img src="../images/Logo.png" alt="Логотип сайту"></a>
         </div>
 
         
         <nav>
             <a href="#services">Послуги</a>
-            <a href="#blog">Блог</a>
-            <a href="#contacts">Контакти</a>
+            <a href="#blogs">Блог</a>
+            <a href="#footer">Контакти</a>
         </nav>
 
         
         <div class="cta-button">
             <a  href="./CreateCW.html"> <button>Створити резюме</button></a>
+        </div>
+
+        <div class="burger">
+            <img src="../images/tabler.png" alt="Логотип сайту">
         </div>
     </header>
 
@@ -45,21 +58,13 @@
                         <div class="slide active">
                             <p>Допомогу зі створенням резюме</p>
                             <div class="resume-card">
-                                <div class="resume-header">Ваше резюме</div>
-                                <img src="../images/main-page-1.png" alt="Фото Жмишенко В. А." class="resume-image">
-                                    <div class="resume-details">
-                                        <h3>Жмишенко В. А.</h3>
-                                        <p>Деталь 1</p>
-                                        <p>Деталь 2</p>
-                                        <p>Деталь 3</p>
-                                    </div>
+                                <img src="../images/main-page-1.png" alt="Фото Жмишенко В. А." class="main-image">
                             </div>
                         </div>
 
                         <div class="slide">
                             <p>Консультації щодо працевлаштування</p>
                             <div>
-                                <p>Щоденні індивідуальні консультації допоможуть знайти роботу мрії</p> 
                                 <img src="../images/main-page-2.png" alt="Головна фото 2" class="main-image">   
                             </div>
                         </div>
@@ -67,7 +72,6 @@
                         <div class="slide">
                             <p>Підготовка до співбесіди</p>
                             <div>
-                                <p>Ефективна підготовка з нашими експертами підвищує шанси на успіх</p> 
                                 <img src="../images/main-page-3.png" alt="Головна фото 3" class="main-image">   
                             </div>
                         </div>
@@ -82,25 +86,25 @@
             </div>
         </section>
 
-        <section class="services">
+        <section class="services" id="services">
                 <div class="service-card">
-                    <h3>Створення резюме</h3>
+                    <h3 class="service-card-h3">Створення резюме</h3>
                     <p>Ваше резюме – це перший крок до успішної кар'єри, і ми готові допомогти вам зробити цей крок впевнено! Наша команда професійних HR-експертів пропонує індивідуальний підхід до створення резюме, що підкреслить ваші сильні сторони, досвід і навички.</p>
-                    <p class="price">Ціна: від 1000 грн.</p>
+                    <span class="price">Ціна: від 1000 грн.</span>
                     <a href="./ContactFrom.html"> <button>Придбати</button></a>
                 </div>
             
                 <div class="service-card">
-                    <h3>Підготовка до співбесіди</h3>
+                    <h3 class="service-card-h3">Підготовка до співбесіди</h3>
                     <p>Успіх на співбесіді часто вирішує вашу подальшу кар'єру. Наша послуга підготовки до співбесіди допоможе вам впевнено відповідати на найскладніші запитання, підкреслюючи ваші професійні досягнення.</p>
-                    <p class="price">Ціна: від 2000 грн.</p>
+                    <span class="price">Ціна: від 2000 грн.</span>
                     <a href="./ContactFrom.html"> <button>Придбати</button></a>
                 </div>
             
                 <div class="service-card">
-                    <h3>Кар'єрне консультування</h3>
+                    <h3 class="service-card-h3">Кар'єрне консультування</h3>
                     <p>Наші кар'єрні консультанти допоможуть вам визначити ваші пріоритети, таланти і цілі для побудови кар'єрного шляху. Ви отримаєте професійний аналіз ваших можливостей щодо кроків для досягнення успіху в обраній сфері.</p>
-                    <p class="price">Ціна: від 500 грн.</p>
+                    <span class="price">Ціна: від 500 грн.</span>
                     <a href="./ContactFrom.html"> <button>Придбати</button></a>
                 </div>
         </section>
@@ -121,8 +125,10 @@
                             </div>
                             <p>Онлайн | Київ</p>
                             <p>Повна зайнятість. Також готові взяти людину з інвалідністю. ostarbeiters — українська продуктова студія...</p>
-                            <p class="date">2 дні тому</p>
-                            <button>Відгукнутись</button>
+                            <div class="card-bottom">
+                                <p class="date">2 дні тому</p>
+                                <button>Відгукнутись</button>
+                            </div>
                         </li>
         
                         
@@ -133,8 +139,10 @@
                             </div>
                             <p>Онлайн | Київ</p>
                             <p>Повна зайнятість. Компанія «ABC» надійний роботодавець...</p>
-                            <p class="date">1 день тому</p>
-                            <button>Відгукнутись</button>
+                            <div class="card-bottom">
+                                <p class="date">1 день тому</p>
+                                <button>Відгукнутись</button>
+                            </div>
                         </li>
         
                         
@@ -144,21 +152,35 @@
                 
                 <aside class="filters">
                     <h3>Фільтри</h3>
-                    <label><input type="checkbox"> Онлайн</label>
-                    <label><input type="checkbox"> Офлайн</label>
-                    <label><input type="checkbox"> Повна зайнятість</label>
-                    <label><input type="checkbox"> Неповна</label>
-                    <label><input type="checkbox"> Тут</label>
-                    <label><input type="checkbox"> Будуть</label>
-                    <label><input type="checkbox"> Фільтри</label>
-                    <label><input type="checkbox"> Багато</label>
-                    <label><input type="checkbox"> Фільтрів</label>
+                    <ul class="filter-lane" id="filter-1">
+                        <li><label><input type="checkbox"> Онлайн</label></li>
+                        <li><label><input type="checkbox"> Офлайн</label></li>
+                    </ul>
+                    <ul class="filter-lane" id="filter-2">
+                        <li><label><input type="checkbox"> Повна зайнятість</label></li>
+                        <li><label><input type="checkbox"> Неповна</label></li>
+                    </ul>
+                    <ul class="filter-lane" id="filter-3">
+                        <li><label><input type="checkbox"> Тут</label></li>
+                        <li><label><input type="checkbox"> Будуть</label></li>
+                        <li><label><input type="checkbox"> Фільтри</label></li>
+                        <li><label><input type="checkbox"> Багато</label></li>
+                        <li><label><input type="checkbox"> Фільтрів</label></li>
+                        <li><label><input type="checkbox"> Багато</label></li>
+                        <li><label><input type="checkbox"> Фільтрів</label></li>
+                        <li><label><input type="checkbox"> Багато</label></li>
+                        <li><label><input type="checkbox"> Фільтрів</label></li>
+                        <li><label><input type="checkbox"> Багато</label></li>
+                        <li><label><input type="checkbox"> Фільтрів</label></li>
+                        <li><label><input type="checkbox"> Багато</label></li>
+                        <li><label><input type="checkbox"> Фільтрів</label></li>
+                    </ul>
                 </aside>
             </div>
         </section>
         
 
-        <section class ='blogs'>
+        <section class ='blogs' id="blogs">
             <div class="left-content">
                 <h2>Найпопулярніші теми тижня:</h2>
 
@@ -193,7 +215,7 @@
     </main>
 
 
-    <footer>
+    <footer id="footer">
         <div class="contact-info">
             <h3>Контактна інформація</h3>
             <div class="contact-info-list"></div>
@@ -208,12 +230,12 @@
             </div>
         </div>
     
-        <div class="services">
+        <div class="footer-services">
             <h3>Послуги</h3>
             <ul>
-                <li><a href="#service1">Послуга 1</a></li>
-                <li><a href="#service2">Послуга 2</a></li>
-                <li><a href="#service3">Послуга 3</a></li>
+                <li><a href="./ContactFrom.html">Створення резюме</a></li>
+                <li><a href="./ContactFrom.html">Підготовка до співбесіди</a></li>
+                <li><a href="./ContactFrom.html">Кар'єрне консультування</a></li>
             </ul>
         </div>
     
@@ -221,5 +243,8 @@
             <img src="../images/Logo.png" alt="Логотип компанії">
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../js/carousel.js"></script>
+    <script src="../js/smooth-scroll.js"></script>
 </body>
 </html>

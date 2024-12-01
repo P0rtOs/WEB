@@ -4,6 +4,7 @@
     "build": "parcel build src/pages/MainPage.html"
   },
   "dependencies": {
+    "jquery": "^3.7.1",
     "parcel": "^2.12.0"
   }
 }

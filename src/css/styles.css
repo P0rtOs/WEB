@@ -1,0 +1,430 @@
+* {
+    color: #FCFCFC;
+    font-size: 28px;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', serif;
+}
+
+body {  
+    background-color: #353535;
+    margin: 0;
+}
+
+/* Загальні стилі для хедера */
+header {
+    
+    background-color: #0E272F;
+    position: sticky;
+    
+    left: 0;
+    top: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5 40px;
+    margin-top: 0;
+    color: #fcfcfc; /* Білий текст */
+}
+
+/* Стилі для логотипу */
+header .logo img {
+    height: 100px; /* Розмір логотипу */
+}
+
+/* Стилі для навігаційних посилань */
+header nav {
+    display: flex;
+    gap: 40px;
+}
+
+header nav a {
+    color: #fcfcfc;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+/* Стилі для кнопки */
+header .cta-button a button {
+    background-color: #353535; /* Колір фону кнопки */
+    color: #fcfcfc;
+    padding: 15px 30px;
+    border: 1px solid #fcfcfc; /* Біла рамка */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 20px;
+}
+
+header .cta-button a button:hover {
+    background-color: #353535; /* Зміна фону при наведенні */
+}
+
+header .burger {
+    display: none;
+}
+
+main {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+section {
+    margin-bottom: 5rem;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+
+/* Загальні стилі для футера */
+footer {
+    padding: 40px;
+    margin-bottom: 40px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    .contact-info {
+        flex: 1;
+        max-width: 400px;
+        float: left;
+        
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            margin-top: 0px;
+        }
+
+        p {
+            margin: 5px 0;
+            font-size: 22px;
+        }
+        
+        .social-icons {
+
+            a {
+                margin-right: 15px;
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+                transition: transform 0.3s ease;
+            }
+            
+            a:hover img {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+
+    .footer-services {
+        flex: 1;
+        max-width: 300px;
+        float: left;
+        margin-left: 60px;
+        
+        h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            margin-top: 0px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+        
+        a {
+            color: #FCFCFC;
+            font-size: 22px;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+
+    }
+
+
+
+    .footer-logo {
+        float: right;
+        padding-left: 300px;
+
+        img {
+            width: 160px;
+            height: auto;
+        }
+    } 
+}
+
+@media (max-width: 990px) {
+
+    header nav {
+        gap: 20px;
+    }
+    header .cta-button a button {
+        margin: 16px;
+    }
+
+    footer {
+        .contact-info {
+            h3 {
+                font-size: 22px;
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+
+        .footer-services {
+            h3 {
+                font-size: 22px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+
+            a {
+                font-size: 18px;
+            }
+        }
+
+
+        .footer-logo {
+            padding-left: 10%;
+            img {
+                width: 120px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    header nav {
+        display:none;
+    }
+    
+    header .burger {
+        display: flex;
+    }
+
+    header .logo img {
+        height: 60px; /* Розмір логотипу */
+    }
+
+    header .burger img{
+        height: 60px;
+    }
+
+    header button {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    header .cta-button  {
+        margin-left: 15%;
+        padding: 10px 20px;
+        button {
+            margin: 16px;
+        }
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    footer {
+        padding: 0 3%;
+
+        .footer-services {
+            margin-left: 40px;
+            width: 12%;
+        }
+
+        .footer-logo {
+            img {
+                width: 100px;
+                height: auto;
+            }
+        }
+
+        .footer-services {
+            ul {
+                margin: 16 0px;
+            }
+            li {
+                margin: 5px 0;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 425px) {
+
+    *{
+        font-size: 16px;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    section {
+        margin: 10px;
+    }
+
+    header button {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    header .logo img {
+        height: 40px; /* Розмір логотипу */
+    }
+
+    header .burger img{
+        height: 40px;
+    }
+
+    header .cta-button  {
+        padding: 0;
+
+        a button {
+            padding: 0;
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+    *{
+        font-size: 16px;
+    }
+
+    footer {
+        margin-bottom: 0;
+
+        .footer-services {
+            margin-left: 10px;
+        }
+
+        .contact-info {
+            h3 {
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 10px;
+            }
+        }
+
+        .footer-services {
+            h3 {
+                font-size: 12px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+
+            a {
+                font-size: 10px;
+            }
+        }
+
+        .footer-logo {  
+            padding-left: 6%;
+            img {
+                width: 60px;
+                height: auto;
+            }
+        } 
+    }
+}
+
+
+@media (max-width: 370px) {
+    header {    
+        padding: 5 20px;
+    }
+    header button {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    header .logo img {
+        height: 40px; /* Розмір логотипу */
+    }
+
+    header .burger img{
+        height: 40px;
+    }
+
+    header .cta-button  {
+        padding: 0;
+
+        a button {
+            padding: 0;
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+    *{
+        font-size: 16px;
+    }
+
+    footer {
+        margin-bottom: 0;
+
+        .footer-services {
+            margin-left: 10px;
+        }
+
+        .contact-info {
+            h3 {
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 10px;
+            }
+        }
+
+        .footer-services {
+            h3 {
+                font-size: 12px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+
+            a {
+                font-size: 10px;
+            }
+        }
+
+        .footer-logo {  
+            padding-left: 6%;
+            img {
+                width: 50px;
+                height: auto;
+            }
+        } 
+    }
+}
