@@ -40,6 +40,8 @@ main .starter-page {
     }
 
     p {
+        display: flex;
+        text-wrap: nowrap;
         margin: 15 0px;
     }
 }

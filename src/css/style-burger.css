@@ -1,0 +1,41 @@
+header {
+    .nav.open {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        gap: 40px;
+        padding: 150 0px;
+        .header-socials {
+            display: flex;
+            gap: 15px;
+            img {
+                width: 30px;
+                height: 30px;
+            }
+            
+            a:hover img {
+                transform: scale(1.1);
+            }
+        }
+        .house {
+            display: flex;
+        }
+
+        .house-lane {
+            display: flex;
+        }
+    }
+
+    .house {
+        display: none;
+    }
+
+
+    .cross {
+        display: none;
+        img {
+            height: 50px;
+            width: auto;
+        }
+    }
+}

@@ -120,6 +120,9 @@
         background-color:#353535;
     }
 
+    li {
+        list-style: none;
+    }
 
     label {
         color: #353535;

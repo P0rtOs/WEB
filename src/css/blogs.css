@@ -54,6 +54,7 @@ section.blogs {
 
         p {
             margin: 5px;
+            text-wrap: pretty;
         }
     }
 }
