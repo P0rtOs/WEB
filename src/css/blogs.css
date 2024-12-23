@@ -1,5 +1,5 @@
 a {
-    color: #008CFF;
+    color: #008cff;
     text-decoration: none;
 }
 
@@ -7,15 +7,13 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Загальна структура */
 section.blogs {
     display: flex;
     gap: 20px;
     padding: 20px;
 
-
     .left-content {
-        flex: 1.5;  /* Зменшуємо ліву колонку */
+        flex: 1.5;
 
         .blogs-list {
             list-style: none;
@@ -36,9 +34,9 @@ section.blogs {
             }
         }
     }
-    
+
     .right-content {
-        flex: 1.4;  /* Збільшуємо праву колонку */
+        flex: 1.4;
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -47,7 +45,7 @@ section.blogs {
             max-width: 100%;
             border-radius: 5px;
         }
-        
+
         h2 {
             margin: 5px;
         }

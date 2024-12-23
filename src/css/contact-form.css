@@ -6,9 +6,8 @@
     padding: 50px 20px;
 }
 
-/* Контейнер форми */
 .contact-form-container {
-    background-color: #BAB1B1; /* Фон контейнера */
+    background-color: #bab1b1;
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -16,7 +15,6 @@
     width: 100%;
 }
 
-/* Заголовок форми */
 .contact-form-container h2 {
     font-size: 24px;
     color: #353535;
@@ -24,7 +22,6 @@
     margin-bottom: 20px;
 }
 
-/* Групи полів */
 .form-group {
     display: flex;
     flex-direction: column;
@@ -51,16 +48,15 @@
 }
 
 .form-group select option {
-    color: #353535; /* Колір тексту опцій */
+    color: #353535;
     font-size: 20px;
 }
 
 .form-group input:focus,
 .form-group select:focus {
-    border-color: #008CFF;
+    border-color: #008cff;
 }
 
-/* Стилі для кнопки */
 .submit-button {
     display: block;
     width: 100%;
@@ -77,14 +73,19 @@
 
 .submit-button:hover {
     background-color: #353535;
-    color: #FCFCFC;
+    color: #fcfcfc;
     border-color: #353535;
 }
 
-/* Адаптивність для мобільних пристроїв */
 @media (max-width: 768px) {
     .contact-form-container {
         padding: 30px;
+    }
+
+    .contact-form-section {
+        padding: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .form-group {
@@ -94,5 +95,17 @@
     .submit-button {
         font-size: 16px;
         padding: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-form-section {
+        padding: 0px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contact-form-container {
+        border-radius: 0px;
     }
 }

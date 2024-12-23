@@ -6,11 +6,11 @@ main .starter-page {
 
 .left-content {
     width: 80%;
-    max-width: 900px; /* Обмеження ширини текстового контейнера */
+    max-width: 900px;
 
     h2 {
         font-size: 30px;
-        margin-bottom: 15px; /* Менше місця під заголовком */
+        margin-bottom: 15px;
         color: #fcfcfc;
     }
 
@@ -18,8 +18,8 @@ main .starter-page {
         list-style-type: disc;
         margin-left: 22px;
         color: #fcfcfc;
-        line-height: 1.4; /* Відстань між рядками в списку */
-    
+        line-height: 1.4;
+
         li {
             font-size: 28px;
         }
@@ -35,7 +35,7 @@ main .starter-page {
 }
 .right-content {
     padding-left: 100px;
-    h3{
+    h3 {
         margin: 10 0px;
     }
 
@@ -47,7 +47,6 @@ main .starter-page {
 }
 
 @media (max-width: 1180) {
-
     .starter-page {
         margin-left: 60px;
         margin-right: 60px;
@@ -61,12 +60,11 @@ main .starter-page {
     }
 
     .main-image {
-        max-width: 100%; /* Обмеження ширини */
-        height: auto; /* Автоматичне підлаштування висоти з пропорціями */
+        max-width: 100%;
+        height: auto;
     }
     p {
         font-size: 20px;
-
     }
 
     .left-content {
@@ -101,7 +99,6 @@ main .starter-page {
 }
 
 @media (max-width: 850) {
-
     .starter-page {
         margin-left: 50px;
         margin-right: 50px;
@@ -130,7 +127,6 @@ main .starter-page {
         margin-top: 20px;
     }
     .starter-page {
-
         margin-left: 40px;
         margin-right: 40px;
         flex-direction: column;
@@ -160,25 +156,19 @@ main .starter-page {
             }
         }
     }
-
-    
 }
-
 
 @media (max-width: 450px) {
     .starter-page {
-
         margin-left: 20px;
         margin-right: 20px;
     }
 }
 
-
 @media (max-width: 370px) {
     .starter-page {
         margin-left: 15px;
         margin-right: 15px;
-
 
         p {
             font-size: 12px;
@@ -214,5 +204,4 @@ main .starter-page {
             }
         }
     }
-
 }

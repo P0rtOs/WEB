@@ -1,8 +1,8 @@
 .carousel {
     position: relative;
-   
+
     width: 100%;
-    
+
     margin: auto;
 }
 
@@ -10,7 +10,7 @@
     display: flex;
     transition: transform 0.5s ease;
 }
-/* Анімація для плавної появи */
+
 @keyframes fade-in {
     from {
         opacity: 0;
@@ -20,7 +20,6 @@
     }
 }
 
-/* Анімація для плавного зникнення */
 @keyframes fade-out {
     from {
         opacity: 1;
@@ -30,14 +29,14 @@
     }
 }
 .slide {
-    min-width: 100%; /* Each slide takes up full width */
-    animation: fade-in 1.5s ease forwards; /* Додається анімація при появі */
+    min-width: 100%;
+    animation: fade-in 1.5s ease forwards;
     display: none;
 }
 
 .slide.active {
     display: block;
-    animation: fade-in 1.5s ease forwards; /* Анімація при показі */
+    animation: fade-in 1.5s ease forwards;
 }
 
 .carousel-indicators {
@@ -53,22 +52,22 @@
     border-radius: 50%;
     margin: 0 10px;
     cursor: pointer;
-    justify-content: center; 
+    justify-content: center;
     transition: background-color 0.3s;
 }
 
-.indicator:hover, .indicator.active {
+.indicator:hover,
+.indicator.active {
     width: 25px;
     height: 25px;
     background: radial-gradient(circle, white 60%, blue 80%);
-    border-radius: 50%; /* Робить круглу форму */
-    box-shadow: 0 0 5px blue; /* Додає "світіння" */
+    border-radius: 50%;
+    box-shadow: 0 0 5px blue;
 }
 
-
-
 @media (max-width: 900px) {
-    .indicator, .indicator.active{
+    .indicator,
+    .indicator.active {
         height: 18px;
         width: 18px;
     }

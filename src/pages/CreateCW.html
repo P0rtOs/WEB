@@ -1,131 +1,188 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/style-burger.css">
-  <link rel="stylesheet" href="../css/CreateCW.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <title>Генерація резюме</title>
-</head>
-<body>
-  <header>
-        
-    <div class="logo">
-        <a href="./MainPage.html#body"><img src="../images/Logo.png" alt="Логотип сайту"></a>
-    </div>
-
-    
-    <nav class="nav">
-        <a href="./MainPage.html#services">Послуги</a>
-        <a href="./MainPage.html#blogs">Блог</a>
-        <a href="./MainPage.html#footer">Контакти</a>
-    </nav>
-
-    
-    <div class="cta-button">
-        <a  href="./CreateCW.html"> <button>Створити резюме</button></a>
-    </div>
-
-    <div class="burger">
-        <img src="../images/tabler.png" alt="Логотип сайту">
-    </div>
-  </header> 
-
-  <main>
-    <section class="resume-form-section">
-      <div class="resume-form-container">
-        <h2>Генерація резюме</h2>
-        <form action="#" method="POST">
-          <div class="form-group photo-upload">
-            <label for="photo">Виберіть фото</label>
-            <input type="file" id="photo" name="photo">
-          </div>
-
-          <div class="form-group personal-details">
-            <label for="first-name">Ім'я</label>
-            <input type="text" id="first-name" name="first-name" required>
-
-            <label for="last-name">Прізвище</label>
-            <input type="text" id="last-name" name="last-name" required>
-
-            <label for="address">Побітовий</label>
-            <input type="text" id="address" name="address">
-
-            <label for="phone">Номер телефону</label>
-            <input type="tel" id="phone" name="phone">
-
-            <label for="email">Електронна пошта</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="birthdate">Дата народження</label>
-            <input type="date" id="birthdate" name="birthdate">
-          </div>
-
-          <div class="form-group">
-            <label for="education">Освіта</label>
-            <textarea id="education" name="education" placeholder="Перерахуйте заклади, в яких ви навчались" required></textarea>
-          </div>
-
-          <div class="form-group">
-            <label for="courses">Курси</label>
-            <textarea id="courses" name="courses" placeholder="Перерахуйте пройдені вами курси" required></textarea>
-          </div>
-
-          <div class="form-group">
-            <label for="languages">Знання мов</label>
-            <textarea id="languages" name="languages" placeholder="Перерахуйте якими мовами ви володієте та на якому рівні" required></textarea>
-          </div>
-
-          <div class="form-group">
-            <label for="skills">Навички</label>
-            <textarea id="skills" name="skills" placeholder="Перерахуйте ваші професійні навички" required></textarea>
-          </div>
-
-          <div class="form-group">
-            <label for="qualities">Особисті якості</label>
-            <textarea id="qualities" name="qualities" placeholder="Перерахуйте ваші софт скіли" required></textarea>
-          </div>
-
-          <button type="submit" class="submit-button">Підтвердити</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="contact-info">
-        <h3>Контактна інформація</h3>
-        <div class="contact-info-list"></div>
-            <p>Номер телефону: +38 012 345 6789</p>
-            <p>Email: info@company.com</p>
-            <div class="social-icons">  
-                <a href="#"><img src="../images/twitter.png" alt="Facebook"></a>
-                <a href="#"><img src="../images/facebook.png" alt="Instagram"></a>
-                <a href="#"><img src="../images/telegram.png" alt="Twitter"></a>
-                <a href="#"><img src="../images/instagram.png" alt="LinkedIn"></a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/styles.css" />
+        <link rel="stylesheet" href="../css/style-burger.css" />
+        <link rel="stylesheet" href="../css/CreateCW.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Генерація резюме</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="./MainPage.html#body">
+                    <img src="../images/Logo.png" alt="Логотип сайту" />
+                </a>
             </div>
-        </div>
-    </div>
+            <nav class="nav">
+                <a href="./MainPage.html#services">Послуги</a>
+                <a href="./MainPage.html#blogs">Блог</a>
+                <a href="./MainPage.html#footer">Контакти</a>
+            </nav>
+            <div class="cta-button">
+                <a href="./CreateCW.html"><button>Створити резюме</button></a>
+            </div>
+            <div class="burger">
+                <img src="../images/tabler.png" alt="Меню" />
+            </div>
+        </header>
 
-    <div class="footer-services">
-        <h3>Послуги</h3>
-        <ul>
-            <li><a href="./ContactFrom.html">Створення резюме</a></li>
-            <li><a href="./ContactFrom.html">Підготовка до співбесіди</a></li>
-            <li><a href="./ContactFrom.html">Кар'єрне консультування</a></li>
-        </ul>
-    </div>
+        <main>
+            <section class="resume-form-section">
+                <div class="resume-form-container">
+                    <h2>Генерація резюме</h2>
+                    <form id="resumeForm">
+                        <div class="form-group photo-upload">
+                            <label for="photo">Виберіть фото</label>
+                            <input type="file" id="photo" name="photo" />
+                        </div>
 
-    <div class="footer-logo">
-        <img src="../images/Logo.png" alt="Логотип компанії">
-    </div>
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="../js/smooth-scroll.js"></script>
-  <script src="../js/burger.js"></script>
-</body>
+                        <div class="form-group personal-details">
+                            <label for="first-name">Ім'я</label>
+                            <input
+                                type="text"
+                                id="first-name"
+                                name="first-name"
+                                required
+                            />
+
+                            <label for="last-name">Прізвище</label>
+                            <input
+                                type="text"
+                                id="last-name"
+                                name="last-name"
+                                required
+                            />
+
+                            <label for="address">Адреса</label>
+                            <input type="text" id="address" name="address" />
+
+                            <label for="phone">Номер телефону</label>
+                            <input type="tel" id="phone" name="phone" />
+
+                            <label for="email">Електронна пошта</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                            />
+
+                            <label for="birthdate">Дата народження</label>
+                            <input
+                                type="date"
+                                id="birthdate"
+                                name="birthdate"
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="education">Освіта</label>
+                            <textarea
+                                id="education"
+                                name="education"
+                                placeholder="Перерахуйте заклади, в яких ви навчались"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="courses">Курси</label>
+                            <textarea
+                                id="courses"
+                                name="courses"
+                                placeholder="Перерахуйте пройдені вами курси"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="languages">Знання мов</label>
+                            <textarea
+                                id="languages"
+                                name="languages"
+                                placeholder="Перерахуйте якими мовами ви володієте та на якому рівні"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="skills">Навички</label>
+                            <textarea
+                                id="skills"
+                                name="skills"
+                                placeholder="Перерахуйте ваші професійні навички"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="qualities">Особисті якості</label>
+                            <textarea
+                                id="qualities"
+                                name="qualities"
+                                placeholder="Перерахуйте ваші софт скіли"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <a href="./CW.html"
+                            ><button type="submit" class="submit-button">
+                                Підтвердити
+                            </button></a
+                        >
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="contact-info">
+                <h3>Контактна інформація</h3>
+                <p>Номер телефону: +38 012 345 6789</p>
+                <p>Email: info@company.com</p>
+                <div class="social-icons">
+                    <a href="#">
+                        <img src="../images/twitter.png" alt="Twitter" />
+                    </a>
+                    <a href="#">
+                        <img src="../images/facebook.png" alt="Facebook" />
+                    </a>
+                    <a href="#">
+                        <img src="../images/telegram.png" alt="Telegram" />
+                    </a>
+                    <a href="#">
+                        <img src="../images/instagram.png" alt="Instagram" />
+                    </a>
+                </div>
+            </div>
+            <div class="footer-services">
+                <h3>Послуги</h3>
+                <ul>
+                    <li><a href="./ContactFrom.html">Створення резюме</a></li>
+                    <li>
+                        <a href="./ContactFrom.html"
+                            >Підготовка до співбесіди</a
+                        >
+                    </li>
+                    <li>
+                        <a href="./ContactFrom.html">Кар'єрне консультування</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <img src="../images/Logo.png" alt="Логотип компанії" />
+            </div>
+        </footer>
+
+        <!-- Підключення вашого скрипта -->
+        <script src="../js/CW_data.js"></script>
+    </body>
 </html>

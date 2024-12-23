@@ -1,99 +1,129 @@
-.resume-form-section {
-  display: flex;
-  justify-content: center;
-}
-
-.resume-form-container {
-  background-color: #BAB1B1; /* Основний бежевий колір */
-  padding: 30px;
-  border-radius: 10px;
-  max-width: 600px;
-  width: 100%;
-  box-shadow: 0 4px 10px rgba(35, 35, 35);
-}
-
-.resume-form-container h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 24px;
-  color: #353535;
-}
-
-/* Стилі для полів форми */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-group.photo-upload {
-  align-items: center;
-}
-
-label {
-  font-weight: bold;
-  margin-bottom: 5px;
-  font-size: 14px;
-  color: #353535;
-}
-
-input, textarea, button {
-  font-size: 14px;
-  padding: 10px;
-  border: 1px solid #aaa;
-  border-radius: 5px;
-  outline: none;
+input,
+textarea,
+button {
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    outline: none;
+    color: #000; /* Додано чорний колір тексту */
+    background-color: #fcfcfc; /* Додано світлий фон */
 }
 
 input[type="file"] {
-  border: none;
-  background-color: #FCFCFC;
-  padding: 5px;
+    border: none;
+    background-color: #fcfcfc;
+    padding: 5px;
+    color: #000; /* Додано колір тексту для тексту вибору файлу */
 }
 
-input:focus, textarea:focus {
-  border-color: #353535;
+input:focus,
+textarea:focus {
+    border-color: #353535;
+    color: #000; /* Збереження кольору тексту при фокусі */
 }
 
-/* Стилі для текстових областей */
 textarea {
-  resize: none;
-  height: 80px;
+    resize: none;
+    height: 80px;
+    color: #000; /* Чорний текст для textarea */
+    background-color: #fcfcfc; /* Світлий фон для textarea */
 }
 
-/* Група персональних даних */
+.resume-form-section {
+    display: flex;
+    justify-content: center;
+}
+
+.resume-form-container {
+    background-color: #bab1b1;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(35, 35, 35);
+}
+
+.resume-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #353535;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.photo-upload {
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #353535;
+}
+
+input,
+textarea,
+button {
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="file"] {
+    border: none;
+    background-color: #fcfcfc;
+    padding: 5px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #353535;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
 .personal-details {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
 
-/* Кнопка */
 .submit-button {
-  color: #353535;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-size: 16px;
+    color: #353535;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
 }
 
 .submit-button:hover {
-  background-color: #353535;
-  color:  #000;
+    background-color: #353535;
+    color: #000;
 }
 
-/* Адаптивність */
 @media (max-width: 768px) {
-  .personal-details {
-    grid-template-columns: 1fr;
-  }
+    .personal-details {
+        grid-template-columns: 1fr;
+    }
 
-  .resume-form-container {
-    padding: 20px;
-  }
+    .resume-form-container {
+        padding: 20px;
+    }
 }

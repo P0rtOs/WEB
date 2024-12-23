@@ -1,32 +1,29 @@
-/* Загальні стилі для секції послуг */
 .services {
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
 
-/* Карточка послуги */
 .service-card {
-    background-color: #D9D9D9; /* Світлий фон картки */
+    background-color: #d9d9d9;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding-top: 24px;
     padding-left: 24px;
     padding-right: 24px;
     min-height: 500px;
-    width: 30%; /* Три картки в одному ряду */
+    width: 30%;
     text-align: center;
 }
 
-/* Заголовок картки */
 .service-card-h3 {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 15px;
-    color: #353535; /* Темний текст */
+    color: #353535;
 }
 
-span.price{
+span.price {
     display: block;
     font-weight: bold;
     color: #353535;
@@ -34,18 +31,16 @@ span.price{
     min-height: 60px;
 }
 
-/* Текстовий опис */
 .service-card p {
     font-size: 18px;
     line-height: 2;
     margin-bottom: 15px;
     min-height: 350px;
-    color: #353535; /* Темний текст */
+    color: #353535;
 }
 
-/* Кнопка */
 button {
-    background-color: #BAB1B1; /* Світло-коричневий */
+    background-color: #bab1b1;
     color: #353535;
     font-size: 28px;
     font-weight: bold;
@@ -54,23 +49,21 @@ button {
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin: 24px
+    margin: 24px;
 }
 
 button:hover {
-    background-color: #917d7d; /* Темніший відтінок для hover */
+    background-color: #917d7d;
 }
 
-
 @media (max-width: 1100) {
-
     .services {
-        background-color: #BAB1B1;
+        background-color: #bab1b1;
         overflow-x: auto;
         gap: 10px;
         margin: 40 0px;
-        
-       .service-card {
+
+        .service-card {
             min-width: 280px;
 
             h3 {
@@ -90,6 +83,6 @@ button:hover {
                 margin: 16px;
                 font-size: 18px;
             }
-       }
+        }
     }
 }
