@@ -4,45 +4,58 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="../css/styles.css" />
+        <link rel="stylesheet" href="../css/style-burger.css" />
+        <link rel="stylesheet" href="../css/cw.css" />
         <title>Результат генерації резюме</title>
-        <style>
-            .resume-content {
-                display: flex;
-                gap: 20px;
-            }
-            .left-section,
-            .right-section {
-                flex: 1;
-            }
-            .profile-photo {
-                max-width: 150px;
-                border-radius: 50%;
-            }
-        </style>
     </head>
     <body>
         <header>
             <div class="logo">
-                <img src="../images/Logo.png" alt="Логотип сайту" />
+                <a href="./MainPage.html#body"
+                    ><img src="../images/Logo.png" alt="Логотип сайту"
+                /></a>
             </div>
 
-            <nav>
+            <nav class="nav">
+                <div class="house-lane">
+                    <img src="../images/house.svg" class="house" alt="house" />
+                    <a href="./MainPage.html#body">Головна</a>
+                </div>
                 <a href="#services">Послуги</a>
-                <a href="#blog">Блог</a>
-                <a href="#contacts">Контакти</a>
+                <a href="#blogs">Блог</a>
+                <a href="#footer">Контакти</a>
+                <div class="header-socials">
+                    <a href="#"
+                        ><img src="../images/twitter.png" alt="Facebook"
+                    /></a>
+                    <a href="#"
+                        ><img src="../images/facebook.png" alt="Instagram"
+                    /></a>
+                    <a href="#"
+                        ><img src="../images/telegram.png" alt="Twitter"
+                    /></a>
+                    <a href="#"
+                        ><img src="../images/instagram.png" alt="LinkedIn"
+                    /></a>
+                </div>
             </nav>
 
             <div class="cta-button">
-                <button onclick="window.location.href='./CreateCW.html'">
-                    Створити резюме
-                </button>
+                <a href="./CreateCW.html"> <button>Створити резюме</button></a>
+            </div>
+
+            <div class="burger">
+                <img src="../images/tabler.png" alt="burger" />
+            </div>
+            <div class="cross">
+                <img src="../images/cross.svg" alt="cross" />
             </div>
         </header>
 
         <main>
             <section class="resume-result-section">
+                <h2>Результат генерації</h2>
                 <div class="resume-result-container">
-                    <h2>Результат генерації</h2>
                     <div class="resume-content">
                         <!-- Ліва частина -->
                         <div class="left-section">
@@ -58,14 +71,16 @@
                                 <strong>Дата народження:</strong>
                                 <span id="birthdate"></span>
                             </p>
-                            <p><strong>Контактна інформація</strong></p>
+                            <p class="contact">
+                                <strong>Контактна інформація</strong>
+                            </p>
                             <p>
                                 <strong>Телефон:</strong>
                                 <span id="phone"></span>
                             </p>
                             <p>
                                 <strong>Електронна пошта:</strong>
-                                <a href="#" id="email-link"></a>
+                                <a href="#" id="email-link" class="email"></a>
                             </p>
                         </div>
 
@@ -87,8 +102,8 @@
                             <ul id="qualities"></ul>
                         </div>
                     </div>
-                    <button class="download-pdf">Завантажити PDF</button>
                 </div>
+                <button class="download-pdf">Завантажити PDF</button>
             </section>
         </main>
 
@@ -126,6 +141,8 @@
                 <img src="../images/Logo.png" alt="Логотип компанії" />
             </div>
         </footer>
-        <script src="../js/CW_data.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="../js/CW_display.js"></script>
+        <script src="../js/smooth-scroll.js"></script>
     </body>
 </html>

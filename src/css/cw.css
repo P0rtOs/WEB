@@ -1,0 +1,141 @@
+strong {
+    color: #000000;
+}
+
+li {
+    color: #000000;
+    font-size: 22px;
+}
+
+.resume-result-section {
+    margin: 80px;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: #bab1b1;
+}
+
+.resume-result-container {
+    width: 900px;
+    height: 1100px;
+    margin: 60px auto;
+    background-color: #fcfcfc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 28px 30px;
+    font-family: "Arial", sans-serif;
+}
+
+.resume-content {
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.right-section {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    border: 2px solid #fcfcfc;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.left-section h3 {
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.right-section h4 {
+    font-size: 22px;
+    color: #d17e0a;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.left-section p,
+.right-section p,
+.right-section ul {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #000000;
+    line-height: 1.5;
+}
+
+.right-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.right-section ul li::before {
+    content: "•";
+    color: #000000;
+    margin-right: 8px;
+    font-size: 30px;
+}
+
+.download-pdf {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto 0;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.download-pdf:hover {
+    background-color: #0056b3;
+}
+.left-section {
+    text-align: left;
+    font-size: 30px;
+    p {
+        margin: 50px 0px;
+    }
+    .email {
+        color: #d17e0a;
+        text-decoration: underline;
+        text-underline-offset: 8px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .contact {
+        strong {
+            color: #0056b3;
+            text-decoration: underline;
+            text-wrap: nowrap;
+            font-size: 22px;
+        }
+    }
+    span {
+        color: #000000;
+    }
+}
